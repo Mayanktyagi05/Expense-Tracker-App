@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expense Tracker App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Expense Tracker</h3>
+    </header>
+
+    <section class="container">
+        <form id="my-form">
+            <h1>Add Expense</h1>
+            <div class="msg"></div>
+            <div class="mt-4">
+                <label for="amount">Expense Amount:</label>
+                <input type="text" id="amount">
+            </div>
+            <div class="mt-4">
+                <label for="description">Description:</label>
+                <input type="text" id="description">
+            </div>
+            <div class="d-flex mt-4">
+                <label for="category">Category:</label>
+                <select class="mx-2" id="category" name="category">
+                    <option class="option" value="" selected>Choose....</option>
+                    <option class="option" value="car">car</option>
+                    <option class="option" value="house">house</option>
+                    <option class="option" value="movie">Movie</option>
+                    <option class="option" value="food">Food</option>
+                </select>
+            </div>
+            <input id="submit" class="btn mt-4" type="submit" value="Add">
+        </form>
+    </section>
+    <section id="list-container" class="container">
+        <ul id="users" class="list-group">
+
+        </ul>
+    </section>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
